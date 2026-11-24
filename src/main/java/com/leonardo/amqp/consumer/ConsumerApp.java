@@ -15,7 +15,7 @@ public class ConsumerApp {
         String instanciaId = args.length > 0 ? args[0] : "instancia-1";
         String tipoDestino = args.length > 1 ? args[1].toLowerCase() : "queue";
         String nomeDestino = args.length > 2 ? args[2] : "lab.amqp.mensagens";
-        long timeoutMs = args.length > 3 ? Long.parseLong(args[3]) : 90_000L;
+        long timeoutMs = args.length > 3 ? Long.parseLong(args[3]) : 360_000L;
 
         ConnectionFactory factory = BrokerConfig.createConnectionFactory();
 
